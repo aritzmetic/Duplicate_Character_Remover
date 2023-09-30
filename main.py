@@ -56,7 +56,7 @@ if __name__ == "__main__":
         user_input = input("\033[31mEnter a string: \033[0m")
         remover = CharacterRemovalProcess(user_input)
         duplicate_removed = remover.duplicates_removal()
-        results.append(duplicate_removed)
+        results.append(duplicate_removed.replace(" ", ""))
 
 # display the results
     print()

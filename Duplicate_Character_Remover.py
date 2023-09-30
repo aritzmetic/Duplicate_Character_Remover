@@ -12,9 +12,9 @@ class CharacterRemovalProcess:
 
         # use for loop to add and append the characters
         for character in self.user_input:
-            if character not in present:
-                present.add(character)
+            if not character.isdigit() and self.user_input.count(character) == 1 and character not in present:
                 result.append(character)
+                present.add(character)
 
         # use join method to return the result
         return ''.join(result)
