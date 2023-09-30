@@ -60,14 +60,14 @@ if __name__ == "__main__":
 
 # display the results
     print()
+    time.sleep(1)
+    print("=" * 51)
+    print("\033[33m Processing Your Duplicated-Free Word/s!...\033[0m".center(60))
+    print("=" * 51)
+    time.sleep(1)
+    print()
     print("\033[44mResults: \033[0m")
     for result in results:
-        time.sleep(1)
-        print("=" * 51)
-        print("\033[33m Processing Your Duplicated-Free Word/s!...\033[0m".center(60))
-        print("=" * 51)
-        time.sleep(1)
-        print()
         print(result)
     
     time.sleep(1)
